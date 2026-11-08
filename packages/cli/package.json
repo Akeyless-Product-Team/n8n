@@ -130,7 +130,7 @@
     "express-handlebars": "8.0.1",
     "express-openapi-validator": "5.5.3",
     "express-prom-bundle": "8.0.0",
-    "express-rate-limit": "7.5.0",
+    "express-rate-limit": "8.7.3",
     "fast-glob": "catalog:",
     "flat": "5.0.2",
     "flatted": "catalog:",

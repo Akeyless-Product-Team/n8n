@@ -74,7 +74,7 @@ jobs:
         uses: n8n-io/n8n/.github/actions/setup-nodejs-blacksmith@f5fbbbe0a28a886451c886cac6b49192a39b0eea # v1.104.1
 
       - name: Start MariaDB
-        uses: isbang/compose-action@802a148945af6399a338c7906c267331b39a71af # v2.0.0
+        uses: isbang/compose-action@b659c744ee9bed25aea2307c017ad849bd104433 # v3.2.0
         with:
           compose-file: ./.github/docker-compose.yml
           services: |
@@ -102,7 +102,7 @@ jobs:
         uses: n8n-io/n8n/.github/actions/setup-nodejs-blacksmith@f5fbbbe0a28a886451c886cac6b49192a39b0eea # v1.104.1
 
       - name: Start MySQL
-        uses: isbang/compose-action@802a148945af6399a338c7906c267331b39a71af # v2.0.0
+        uses: isbang/compose-action@b659c744ee9bed25aea2307c017ad849bd104433 # v3.2.0
         with:
           compose-file: ./.github/docker-compose.yml
           services: mysql-8.4
@@ -127,7 +127,7 @@ jobs:
         uses: n8n-io/n8n/.github/actions/setup-nodejs-blacksmith@f5fbbbe0a28a886451c886cac6b49192a39b0eea # v1.104.1
 
       - name: Start Postgres
-        uses: isbang/compose-action@802a148945af6399a338c7906c267331b39a71af # v2.0.0
+        uses: isbang/compose-action@b659c744ee9bed25aea2307c017ad849bd104433 # v3.2.0
         with:
           compose-file: ./.github/docker-compose.yml
           services: |

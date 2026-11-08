@@ -72,7 +72,7 @@ RUN uv pip install -r /app/task-runner-python/extras.txt
 # ==============================================================================
 # STAGE 3: Task Runner Launcher download
 # ==============================================================================
-FROM alpine:3.22.1 AS launcher-downloader
+FROM alpine:3.24.0 AS launcher-downloader
 ARG TARGETPLATFORM
 ARG LAUNCHER_VERSION=1.4.0
 

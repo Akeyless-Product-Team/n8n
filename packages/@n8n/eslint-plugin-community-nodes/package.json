@@ -34,7 +34,7 @@
     "@n8n/vitest-config": "workspace:*",
     "@typescript-eslint/rule-tester": "^8.35.0",
     "eslint-doc-generator": "^2.2.2",
-    "eslint-plugin-eslint-plugin": "^7.0.0",
+    "eslint-plugin-eslint-plugin": "^7.6.2",
     "rimraf": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"

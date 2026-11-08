@@ -332,7 +332,7 @@ jobs:
 
       - name: Login to GitHub Container Registry
         if: needs.determine-build-context.outputs.push_enabled == 'true'
-        uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3.4.0
+        uses: docker/login-action@8aa5831fb8d48d8f76594c7ddde61ae58019f550 # v4.8.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -342,7 +342,7 @@ jobs:
         if: needs.determine-build-context.outputs.push_enabled == 'true' && (
           steps.determine-tags.outputs.dockerhub_platform_tag != '' ||
           steps.determine-runners-tags.outputs.dockerhub_platform_tag != '')
-        uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3.4.0
+        uses: docker/login-action@8aa5831fb8d48d8f76594c7ddde61ae58019f550 # v4.8.0
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
@@ -389,7 +389,7 @@ jobs:
         uses: docker/setup-buildx-action@e468171a9de216ec08956ac3ada2f0791b6bd435 # v3.11.1
 
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3.4.0
+        uses: docker/login-action@8aa5831fb8d48d8f76594c7ddde61ae58019f550 # v4.8.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -470,7 +470,7 @@ jobs:
       - name: Login to Docker Hub
         if: steps.dockerhub_check.outputs.CREATE_DOCKERHUB_MANIFEST == 'true' ||
           steps.dockerhub_runners_check.outputs.CREATE_DOCKERHUB_MANIFEST == 'true'
-        uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772 # v3.4.0
+        uses: docker/login-action@8aa5831fb8d48d8f76594c7ddde61ae58019f550 # v4.8.0
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}

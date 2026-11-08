@@ -348,7 +348,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and push n8n Docker image
-        uses: useblacksmith/build-push-action@574eb0ee0b59c6a687ace24192f0727dfb65d6d7 # v1.2
+        uses: useblacksmith/build-push-action@a0cbe4ded6fae40d41e91e47426f0edf1c59f8d6 # v1.2
         with:
           context: .
           file: ./docker/images/n8n/Dockerfile
@@ -363,7 +363,7 @@ jobs:
           tags: ${{ steps.determine-tags.outputs.tags }}
 
       - name: Build and push task runners Docker image
-        uses: useblacksmith/build-push-action@574eb0ee0b59c6a687ace24192f0727dfb65d6d7 # v1.2
+        uses: useblacksmith/build-push-action@a0cbe4ded6fae40d41e91e47426f0edf1c59f8d6 # v1.2
         with:
           context: .
           file: ./docker/images/runners/Dockerfile

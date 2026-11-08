@@ -32,7 +32,7 @@ jobs:
     runs-on: blacksmith-2vcpu-ubuntu-2204
     if: github.event_name != 'pull_request_review' || startsWith(github.event.pull_request.base.ref, 'release/')
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup and Build
         uses: n8n-io/n8n/.github/actions/setup-nodejs-blacksmith@f5fbbbe0a28a886451c886cac6b49192a39b0eea # v1.104.1
@@ -46,7 +46,7 @@ jobs:
       DB_TYPE: sqlite
       DB_SQLITE_POOL_SIZE: 4
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup and Build
         uses: n8n-io/n8n/.github/actions/setup-nodejs-blacksmith@f5fbbbe0a28a886451c886cac6b49192a39b0eea # v1.104.1
@@ -68,7 +68,7 @@ jobs:
       DB_MYSQLDB_TIMEOUT: 120000
       NODE_OPTIONS: '--max-old-space-size=7168'
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup and Build
         uses: n8n-io/n8n/.github/actions/setup-nodejs-blacksmith@f5fbbbe0a28a886451c886cac6b49192a39b0eea # v1.104.1
@@ -96,7 +96,7 @@ jobs:
       DB_MYSQLDB_ACQUIRE_TIMEOUT: 120000
       DB_MYSQLDB_TIMEOUT: 120000
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup and Build
         uses: n8n-io/n8n/.github/actions/setup-nodejs-blacksmith@f5fbbbe0a28a886451c886cac6b49192a39b0eea # v1.104.1
@@ -121,7 +121,7 @@ jobs:
       DB_POSTGRESDB_PASSWORD: password
       DB_POSTGRESDB_POOL_SIZE: 1 # Detect connection pooling deadlocks
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup and Build
         uses: n8n-io/n8n/.github/actions/setup-nodejs-blacksmith@f5fbbbe0a28a886451c886cac6b49192a39b0eea # v1.104.1

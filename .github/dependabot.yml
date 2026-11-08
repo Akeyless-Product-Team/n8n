@@ -1,0 +1,41 @@
+# Automatic dependency update PRs, following the akeylesslabs AppSec baseline.
+# Check weekly; allow up to 100 open version-update PRs per update entry.
+# Existing repository-specific cooldowns, groups and registry settings are retained.
+version: 2
+updates:
+- package-ecosystem: github-actions
+  directories:
+  - /
+  - /.github/actions/setup-nodejs-blacksmith
+  - /.github/actions/setup-nodejs-github
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100
+- package-ecosystem: docker
+  directories:
+  - /.devcontainer
+  - /docker/images/n8n
+  - /docker/images/n8n-base
+  - /docker/images/runners
+  - /packages/@n8n/benchmark
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100
+- package-ecosystem: npm
+  directories:
+  - /
+  - /.github/scripts
+  - /docker/images/runners
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100
+- package-ecosystem: terraform
+  directory: /packages/@n8n/benchmark/infra
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100
+- package-ecosystem: uv
+  directory: /packages/@n8n/task-runner-python
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 100

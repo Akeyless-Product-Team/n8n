@@ -78,7 +78,7 @@
     "@types/validator": "^13.7.0",
     "@types/ws": "^8.18.1",
     "@types/xml2js": "catalog:",
-    "@types/yamljs": "^0.2.31",
+    "@types/yamljs": "^0.2.34",
     "@types/yargs-parser": "21.0.0",
     "@vvo/tzdb": "^6.141.0",
     "concurrently": "^8.2.0",

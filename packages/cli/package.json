@@ -80,7 +80,7 @@
     "@types/xml2js": "catalog:",
     "@types/yamljs": "^0.2.31",
     "@types/yargs-parser": "21.0.0",
-    "@vvo/tzdb": "^6.141.0",
+    "@vvo/tzdb": "^6.202.0",
     "concurrently": "^8.2.0",
     "ioredis-mock": "^8.8.1",
     "mjml": "^4.15.3",
